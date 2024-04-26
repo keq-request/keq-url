@@ -4,6 +4,7 @@
 [![downloads](https://img.shields.io/npm/dm/keq-url.svg?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
 [![license](https://img.shields.io/npm/l/keq-url.svg?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
 [![dependencies](https://img.shields.io/librariesio/release/npm/keq-url?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
+[![Codecov](https://img.shields.io/codecov/c/gh/keq-request/keq-url?logo=codecov&token=PLF0DT6869&style=for-the-badge)](https://codecov.io/gh/keq-request/keq-url)
 
 [Keq](https://github.com/keq-request/keq) middleware for setting the request url.
 
