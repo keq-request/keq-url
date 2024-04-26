@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 18
           registry-url: "https://registry.npmjs.org"
       - run: corepack pnpm i
       - run: corepack pnpm test
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v4.0.1
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+          slug: keq-request/keq-url
