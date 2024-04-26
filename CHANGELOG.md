@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/keq-request/keq-url/compare/v2.0.0...v2.0.1) (2024-04-26)
+
+
+### Miscellaneous Chores
+
+* release 2.0.1 ([7928da9](https://github.com/keq-request/keq-url/commit/7928da931ded536aa26766745213868cbf0ee633))
+
 ## 2.0.0 (2024-04-26)
 
 
