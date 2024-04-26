@@ -1,0 +1,50 @@
+# keq-url
+
+[![version](https://img.shields.io/npm/v/keq-url.svg?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
+[![downloads](https://img.shields.io/npm/dm/keq-url.svg?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
+[![license](https://img.shields.io/npm/l/keq-url.svg?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
+[![dependencies](https://img.shields.io/librariesio/release/npm/keq-url?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
+
+[Keq](https://github.com/keq-request/keq) middleware for setting the request url.
+
+## Usage
+
+### setBaseUrl(baseUrl)
+
+```typescript
+import { request } from "keq";
+import { setBaseUrl, setHost } from "keq-url";
+
+request.use(setBaseUrl("http://example.com/api"));
+
+await request.get("/test");
+// it will send request to 'http://example.com/api/test'
+```
+
+### setOrigin(origin)
+
+```typescript
+import { request } from "keq";
+import { setOrigin } from "keq-url";
+
+request.use(setOrigin("http://example.com:8080"));
+
+await request.get("http://test.com/test");
+// it will send request to 'http://example.com:8080/test'
+```
+
+### setHost(host)
+
+```typescript
+import { request } from "keq";
+import { setHost } from "keq-url";
+
+request.use(setHost("example.com"));
+
+await request.get("http://test.com/test");
+// it will send request to 'http://example.com/test'
+```
+
+## Contributing & Development
+
+If there is any doubt, it is very welcome to discuss the issue together.
