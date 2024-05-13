@@ -1,6 +1,6 @@
 {
   "name": "keq-url",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Set request url",
   "packageManager": "pnpm@9.0.6",
   "keywords": [
