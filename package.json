@@ -41,9 +41,6 @@
     "release:alpha": "standard-version --prerelease alpha",
     "test": "jest"
   },
-  "dependencies": {
-    "whatwg-url": "^14.0.0"
-  },
   "devDependencies": {
     "@buka/eslint-config": "^1.6.0",
     "@commitlint/cli": "^19.3.0",
@@ -51,7 +48,6 @@
     "@jest/globals": "^29.7.0",
     "@rushstack/eslint-patch": "^1.7.2",
     "@types/node": "^20.11.20",
-    "@types/whatwg-url": "^11.0.4",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.57.0",

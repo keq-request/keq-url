@@ -1,5 +1,4 @@
 import { KeqMiddleware } from 'keq'
-import { URL } from 'whatwg-url'
 
 
 export function setBaseUrl(base: string): KeqMiddleware {
