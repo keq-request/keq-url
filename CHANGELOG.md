@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.3](https://github.com/keq-request/keq-url/compare/v2.0.2...v2.0.3) (2024-07-20)
+
+
+### Performance Improvements
+
+* remove whatwg-url because mosts browsers had support ([29b9e31](https://github.com/keq-request/keq-url/commit/29b9e312a0d25a38824172cad98602a83e4dbb5f))
+
 ## [2.0.2](https://github.com/keq-request/keq-url/compare/v2.0.1...v2.0.2) (2024-05-13)
 
 
