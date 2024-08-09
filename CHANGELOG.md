@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.4](https://github.com/keq-request/keq-url/compare/v2.0.3...v2.0.4) (2024-08-09)
+
+
+### Bug Fixes
+
+* port is set to :0 in chrome@70 ([1c1ebfe](https://github.com/keq-request/keq-url/commit/1c1ebfe7e93550003c71a106c4beb8fe51f04cb1))
+
 ## [2.0.3](https://github.com/keq-request/keq-url/compare/v2.0.2...v2.0.3) (2024-07-20)
 
 
