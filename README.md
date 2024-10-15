@@ -6,11 +6,16 @@
 [![dependencies](https://img.shields.io/librariesio/release/npm/keq-url?style=for-the-badge)](https://www.npmjs.com/package/keq-url)
 [![Codecov](https://img.shields.io/codecov/c/gh/keq-request/keq-url?logo=codecov&token=PLF0DT6869&style=for-the-badge)](https://codecov.io/gh/keq-request/keq-url)
 
+[Document EN]: https://keq-request.github.io/guide/libraries/keq-url
+[Document CN]: https://keq-request.github.io/zh/guide/libraries/keq-url
+
+[**Document**][Document EN] | [**中文文档**][Document CN]
+
 [Keq](https://github.com/keq-request/keq) middleware for setting the request url.
 
 ## Usage
 
-### setBaseUrl(baseUrl)
+### `setBaseUrl(baseUrl)`
 
 ```typescript
 import { request } from "keq";
@@ -22,7 +27,7 @@ await request.get("/test");
 // it will send request to 'http://example.com/api/test'
 ```
 
-### setOrigin(origin)
+### `setOrigin(origin)`
 
 ```typescript
 import { request } from "keq";
@@ -34,7 +39,7 @@ await request.get("http://test.com/test");
 // it will send request to 'http://example.com:8080/test'
 ```
 
-### setHost(host)
+### `setHost(host)`
 
 ```typescript
 import { request } from "keq";
