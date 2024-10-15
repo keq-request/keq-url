@@ -18,16 +18,17 @@ function createKeqContext(): KeqContext {
 
     __output: undefined,
     get output() {
+      // @ts-ignore
       return this.__output
     },
-  } as any as KeqContext
+  } as unknown as KeqContext
 }
 
 test('setBaseUrl', async () => {
   const ctx = createKeqContext()
   const next = jest.fn(() => {})
 
-  setBaseUrl('https://example.com/api')(ctx, next)
+  await setBaseUrl('https://example.com/api')(ctx, next)
 
   expect(ctx.request.url.href).toBe('https://example.com/api/test')
   expect(next).toBeCalledTimes(1)
@@ -37,7 +38,7 @@ test('setOrigin', async () => {
   const ctx = createKeqContext()
   const next = jest.fn(() => undefined)
 
-  setOrigin('https://example.com/api')(ctx, next)
+  await setOrigin('https://example.com/api')(ctx, next)
 
   expect(ctx.request.url.href).toBe('https://example.com/test')
   expect(next).toBeCalledTimes(1)
@@ -47,7 +48,7 @@ test('setHost', async () => {
   const ctx = createKeqContext()
   const next = jest.fn(() => undefined)
 
-  setHost('example.com')(ctx, next)
+  await setHost('example.com')(ctx, next)
 
   expect(ctx.request.url.href).toBe('http://example.com/test')
   expect(next).toBeCalledTimes(1)
