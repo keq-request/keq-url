@@ -31,10 +31,6 @@
     "require": "./dist/umd/src/index.js",
     "import": "./dist/esm/src/index.js"
   },
-  "directories": {
-    "doc": "doc",
-    "test": "test"
-  },
   "scripts": {
     "build": "npm run clean && ./build/build.sh",
     "clean": "rm -rf ./dist/*",
